@@ -14,5 +14,6 @@ CHIP Bit {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    DFF(in=w1,out=w2,out=out);
+    Mux(a=w2,b=in,sel=load,out=w1);
 }
